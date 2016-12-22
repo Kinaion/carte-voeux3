@@ -5,6 +5,72 @@
     <meta charset="utf-8">
     <title>carte-voeux</title>
     <style>
+        /*neige*/
+
+        #snow {
+            background: none;
+            font-family: Androgyne;
+            background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            -webkit-animation: snow 10s linear infinite;
+            -moz-animation: snow 10s linear infinite;
+            -ms-animation: snow 10s linear infinite;
+            animation: snow 10s linear infinite;
+        }
+
+        @keyframes snow {
+            0% {
+                background-position: 0px 0px, 0px 0px, 0px 0px;
+            }
+            50% {
+                background-position: 500px 500px, 100px 200px, -100px 150px;
+            }
+            100% {
+                background-position: 500px 1000px, 200px 400px, -100px 300px;
+            }
+        }
+
+        @-moz-keyframes snow {
+            0% {
+                background-position: 0px 0px, 0px 0px, 0px 0px;
+            }
+            50% {
+                background-position: 500px 500px, 100px 200px, -100px 150px;
+            }
+            100% {
+                background-position: 400px 1000px, 200px 400px, 100px 300px;
+            }
+        }
+
+        @-webkit-keyframes snow {
+            0% {
+                background-position: 0px 0px, 0px 0px, 0px 0px;
+            }
+            50% {
+                background-position: 500px 500px, 100px 200px, -100px 150px;
+            }
+            100% {
+                background-position: 500px 1000px, 200px 400px, -100px 300px;
+            }
+        }
+
+        @-ms-keyframes snow {
+            0% {
+                background-position: 0px 0px, 0px 0px, 0px 0px;
+            }
+            50% {
+                background-position: 500px 500px, 100px 200px, -100px 150px;
+            }
+            100% {
+                background-position: 500px 1000px, 200px 400px, -100px 300px;
+            }
+        }
+
         #lune_1_ {
             animation-direction: alternate;
             animation-name: balance;
@@ -56,10 +122,42 @@
             transform-origin: bottom;
             animation-direction: alternate;
         }
+
+        body {
+            width: 690px;
+            height: 531px;
+            background-image: url("3923.png");
+            background-image: url("Blue.png");
+        }
+
+        svg {
+            margin-left: 50%;
+            margin-top: 5%;
+            background-image: url("fond.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #carte {
+            width: 50%;
+            height: 50%;
+            margin-top: 50%;
+            margin left: 50%;
+            z-index: -1;
+        }
+
+        #merry {
+            margin-left: 75%;
+        }
     </style>
+
 </head>
 
 <body>
+    <div id="snow"></div>
+    <img id="merry" src="Merry.png" />
+
+
     <?xml version="1.0" encoding="utf-8"?>
     <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -111,14 +209,11 @@
         c0-3.164,2.458-5.729,5.489-5.729C265.281,285,267.738,287.565,267.738,290.729z"/>
 
 
-    </g>
-  </g>
+
   <g id="hiboux.svg">
   	<g id="family_of_owls">
 
-  			<radialGradient id="shadow_1_" cx="129.4863" cy="1890.4912" r="74.1716" gradientTransform="matrix(1.0989 0 0 0.2727 -41.3752 -237.4073)" gradientUnits="userSpaceOnUse">
-  			<stop  offset="0" style="stop-color:#231F20"/>
-  			<stop  offset="1" style="stop-color:#231F20;stop-opacity:0"/>
+
   		</radialGradient>
   		<path id="shadow_5_" opacity="0.27" fill="url(#shadow_1_)" d="M188.836,278.175c0,13.396-39.362,24.255-87.921,24.255
   			c-48.553,0-87.918-10.859-87.918-24.255c0-13.395,39.365-24.253,87.918-24.253C149.474,253.922,188.836,264.78,188.836,278.175z"
@@ -280,21 +375,21 @@
   					</g>
   					<g clip-path="url(#SVGID_4_)">
   						<defs>
-  							<path id="SVGID_26_" d="M47.416,150.79c-0.735,0.019-1.316,0.63-1.298,1.366c0.02,0.735,0.63,1.317,1.366,1.297
+                <path id="SVGID_26_" d="M47.416,150.79c-0.735,0.019-1.316,0.63-1.298,1.366c0.02,0.735,0.63,1.317,1.366,1.297
   								c0.736-0.02,1.317-0.628,1.297-1.364c-0.018-0.725-0.61-1.299-1.33-1.299C47.439,150.79,47.428,150.79,47.416,150.79"/>
   						</defs>
-  						<clipPath id="SVGID_27_">
+              <clipPath id="SVGID_27_">
   							<use xlink:href="#SVGID_26_"  overflow="visible"/>
   						</clipPath>
+              <radialGradient id="SVGID_28_" cx="-717.002" cy="-817.4595" r="0.6032" gradientTransform="matrix(-2.173 10.2056 10.2056 2.173 6832.4131 9243.7607)" gradientUnits="userSpaceOnUse">
+              <stop  offset="0" style="stop-color:#FFFFFF"/>
+              <stop  offset="0.1212" style="stop-color:#FFFFFF"/>
+              <stop  offset="0.7636" style="stop-color:#FFD8BF"/>
+              <stop  offset="1" style="stop-color:#FFD8BF"/>
+            </radialGradient>
 
-  							<radialGradient id="SVGID_28_" cx="-717.002" cy="-817.4595" r="0.6032" gradientTransform="matrix(-2.173 10.2056 10.2056 2.173 6832.4131 9243.7607)" gradientUnits="userSpaceOnUse">
-  							<stop  offset="0" style="stop-color:#FFFFFF"/>
-  							<stop  offset="0.1212" style="stop-color:#FFFFFF"/>
-  							<stop  offset="0.7636" style="stop-color:#FFD8BF"/>
-  							<stop  offset="1" style="stop-color:#FFD8BF"/>
-  						</radialGradient>
-  						<polygon clip-path="url(#SVGID_27_)" fill="url(#SVGID_28_)" points="49.348,150.906 48.684,154.022 45.555,153.356
-  							46.219,150.24 						"/>
+            <polygon clip-path="url(#SVGID_27_)" fill="url(#SVGID_28_)" points="49.348,150.906 48.684,154.022 45.555,153.356
+              46.219,150.24 						"/>
   					</g>
   					<g clip-path="url(#SVGID_4_)">
   						<defs>
@@ -577,7 +672,7 @@
   									</clipPath>
   									<g clip-path="url(#SVGID_73_)">
 
-  											<image overflow="visible" width="331" height="339" xlink:href="9496A717.png"  transform="matrix(0.1447 0 0 0.1447 90.4819 162.1812)">
+
   										</image>
   									</g>
   								</g>
@@ -600,7 +695,7 @@
   									</clipPath>
   									<g transform="matrix(1 0 0 1 0 -1.525879e-005)" clip-path="url(#SVGID_77_)">
 
-  											<image overflow="visible" width="331" height="339" xlink:href="9496A715.png"  transform="matrix(0.1447 0 0 0.1447 119.1304 163.0859)">
+
   										</image>
   									</g>
   								</g>
@@ -1064,7 +1159,7 @@
   									</clipPath>
   									<g clip-path="url(#SVGID_150_)">
 
-  											<image overflow="visible" width="353" height="322" xlink:href="9496A713.png"  transform="matrix(0.1447 0 0 0.1447 30.8506 169.3892)">
+
   										</image>
   									</g>
   								</g>
@@ -1087,7 +1182,7 @@
   									</clipPath>
   									<g transform="matrix(1 0 0 1 -3.814697e-006 0)" clip-path="url(#SVGID_154_)">
 
-  											<image overflow="visible" width="355" height="319" xlink:href="9496A71D.png"  transform="matrix(0.1447 0 0 0.1447 56.9419 170.2949)">
+
   										</image>
   									</g>
   								</g>
@@ -1123,9 +1218,18 @@
   							<use xlink:href="#SVGID_158_"  overflow="visible"/>
   						</clipPath>
 
-  							<radialGradient id="SVGID_160_" cx="-797.3638" cy="-913.6665" r="0.6033" gradientTransform="matrix(17.9837 47.6075 47.6075 -17.9837 57902.2148 21722.7227)" gradientUnits="userSpaceOnUse">
+  							<radialGradient id="SVGID_160_" cx="-797.3638" cy="-913.6665" r="0.6033" gradientTransform="matrix(17.9837 47.6075 47.6075 -17.9837 57902.2148 28 28 21722.7227)" gradientUnits="userSpaceOnUse">
   							<stop  offset="0" style="stop-color:#FFFFFF"/>
   							<stop  offset="0.1212" style="stop-color:#FFFFFF"/>
+  							<stop  offset="0.7636" style="stop-color:#FFD8BF"/>
+  							<stop   offset="1" style="stop-color:#CB7157"/>
+  						</radialGradient>
+  						<polygon clip-path="url(#SVGID_159_)" fill="url(#SVGID_160_)" points="53.346,205.136 57.028,214.881 50.708,217.269
+  							47.027,207.523 						"/>
+  					</g>
+  					<g clip-path="url(#SVGID_4_)">
+  						<defs>
+  							<path id="SVGID_161_" d="M56.538,"<stop  offset="0.1212" style="stop-color:#FFFFFF"/>
   							<stop  offset="0.7636" style="stop-color:#FFD8BF"/>
   							<stop  offset="1" style="stop-color:#CB7157"/>
   						</radialGradient>
@@ -2141,8 +2245,7 @@
   							</clipPath>
   							<g clip-path="url(#SVGID_301_)">
 
-  									<image overflow="visible" width="334" height="323" xlink:href="9496A71F.png"  transform="matrix(0.1447 0 0 0.1447 29.0137 171.1836)">
-  								</image>
+
   							</g>
   						</g>
   					</g>
@@ -2162,8 +2265,8 @@
   							</clipPath>
   							<g transform="matrix(1 0 0 1 -3.814697e-006 -1.525879e-005)" clip-path="url(#SVGID_305_)">
 
-  									<image overflow="visible" width="331" height="320" xlink:href="9496A712.png"  transform="matrix(0.1447 0 0 0.1447 60.7056 172.4663)">
-  								</image>
+
+
   							</g>
   						</g>
   					</g>
@@ -2320,8 +2423,7 @@
   									</clipPath>
   									<g transform="matrix(1 0 0 1 0 -1.525879e-005)" clip-path="url(#SVGID_330_)">
 
-  											<image overflow="visible" width="322" height="327" xlink:href="9496A711.png"  transform="matrix(0.1447 0 0 0.1447 63.5195 197.2236)">
-  										</image>
+
   									</g>
   								</g>
   							</g>
@@ -2343,8 +2445,7 @@
   									</clipPath>
   									<g transform="matrix(1 0 0 1 -7.629395e-006 0)" clip-path="url(#SVGID_334_)">
 
-  											<image overflow="visible" width="322" height="327" xlink:href="9496A716.png"  transform="matrix(0.1447 0 0 0.1447 82.4424 197.0732)">
-  										</image>
+
   									</g>
   								</g>
   							</g>
@@ -2388,8 +2489,7 @@
   									</clipPath>
   									<g clip-path="url(#SVGID_340_)">
 
-  											<image overflow="visible" width="451" height="363" xlink:href="79C6261E.png"  transform="matrix(0.1447 0 0 0.1447 61.5781 180.8335)">
-  										</image>
+
   									</g>
   								</g>
   							</g>
@@ -2411,8 +2511,7 @@
   							</clipPath>
   							<g transform="matrix(1 0 0 1 -3.814697e-006 0)" clip-path="url(#SVGID_344_)">
 
-  									<image overflow="visible" width="323" height="319" xlink:href="79C62619.png"  transform="matrix(0.1447 0 0 0.1447 60.9473 200.5415)">
-  								</image>
+
   							</g>
   						</g>
   					</g>
@@ -2423,9 +2522,7 @@
   						<clipPath id="SVGID_346_">
   							<use xlink:href="#SVGID_345_"  overflow="visible"/>
   						</clipPath>
-  						<g clip-path="url(#SVGID_346_)">
 
-  								<image overflow="visible" width="323" height="319" xlink:href="79C6261A.png"  transform="matrix(0.1447 0 0 0.1447 84.1719 201.481)">
   							</image>
   						</g>
   					</g>
@@ -3479,7 +3576,7 @@
 		</g>
 	</g>
 </g>
-<!--  background-->
+ <!-- background -->
 
 
   </svg>
