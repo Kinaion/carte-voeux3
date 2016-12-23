@@ -3,15 +3,43 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>carte-voeux</title>
     <style>
+        /*button send*/
+
+        button {
+            display: inline-block;
+            padding: 8px 14px;
+            font-size: 15px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            text-align: center;
+        }
+
+        body {
+            font-family: fantasy;
+            color: white;
+        }
+
+        .input {
+            border-radius: 8px;
+        }
         /*neige*/
 
         #snow {
             background: none;
             font-family: Androgyne;
             background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
-            height: 100%;
+            height: 70%;
             left: 0;
             position: absolute;
             top: 0;
@@ -1211,7 +1239,7 @@
   					<g clip-path="url(#SVGID_4_)">
   						<defs>
   							<path id="SVGID_158_" d="M50.299,215.214c0.804,0.292,1.718,0.591,2.708,0.892c0.08-0.835,0.387-4.029,0.581-6.088
-  								c0.134-1.43,0.183-2.272,0.2-2.721c-0.647-0.219-1.255-0.441-1.808-0.664c-0.269-0.108-0.529-0.221-0.785-0.335
+  								c0.134-1.43,0.183-2.272,0.2-2.721c-0.647-0.219-1.255-0.441-1.808-0.664c-0.269-0.108-0.58-0.529-0.221-0.785-0.335
   								C50.666,207.263,50.27,212.064,50.299,215.214"/>
   						</defs>
   						<clipPath id="SVGID_159_">
@@ -3580,6 +3608,14 @@
 
 
   </svg>
+    <footer>
+        <hr>
+        <p>Send this Card by mail !</p>
+        <form class="" action="index.php" method="post">
+            <input class="input" type="email" name="email" value="">
+            <button type="submit" class="button">SEND ME !</button>
+        </form>
+    </footer>
 
 
 </body>
